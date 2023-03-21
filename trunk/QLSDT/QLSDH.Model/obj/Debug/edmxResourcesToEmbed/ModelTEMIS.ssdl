@@ -1,0 +1,1147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TEMIS_systemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BaoVe_NCS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Buoc1" Type="int" />
+    <Property Name="Buoc2" Type="int" />
+    <Property Name="Buoc3" Type="int" />
+    <Property Name="Buoc4" Type="int" />
+    <Property Name="Buoc5" Type="int" />
+    <Property Name="Buoc6" Type="int" />
+    <Property Name="Buoc7" Type="int" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BaoVeCapBoMon">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HinhThuc" Type="int" />
+    <Property Name="File" Type="nvarchar" MaxLength="550" />
+    <Property Name="SoQD" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayKy" Type="datetime" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="CoquanCT" Type="nvarchar" MaxLength="50" />
+    <Property Name="VaiTro" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenLanBV" Type="nvarchar" MaxLength="150" />
+    <Property Name="GioBV" Type="datetime" />
+    <Property Name="NgayBV" Type="datetime" />
+    <Property Name="DiaDiem" Type="nvarchar" MaxLength="150" />
+    <Property Name="KetQua" Type="bit" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Type" Type="int" />
+  </EntityType>
+  <EntityType Name="BaoVeCapTruong">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HinhThuc" Type="int" />
+    <Property Name="File" Type="nvarchar" MaxLength="550" />
+    <Property Name="SoQD" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayKy" Type="datetime" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="CoquanCT" Type="nvarchar" MaxLength="150" />
+    <Property Name="VaiTro" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenLanBV" Type="nvarchar" MaxLength="250" />
+    <Property Name="GioBV" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayBV" Type="datetime" />
+    <Property Name="DiaDiem" Type="nvarchar" MaxLength="250" />
+    <Property Name="KetQua" Type="bit" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenGiayTo" Type="nvarchar" MaxLength="150" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Type" Type="int" />
+  </EntityType>
+  <EntityType Name="BaoVeTongQuan">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="File" Type="nvarchar" MaxLength="350" />
+    <Property Name="SoQD" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayKy" Type="datetime" />
+    <Property Name="LoaiQd" Type="nvarchar" MaxLength="50" />
+    <Property Name="VaiTro" Type="nvarchar" MaxLength="50" />
+    <Property Name="CoquanCT" Type="nvarchar" MaxLength="150" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="LyDoDieuChinh" Type="nvarchar(max)" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Type" Type="int" />
+  </EntityType>
+  <EntityType Name="BieuMau">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Template" Type="nvarchar" MaxLength="500" />
+    <Property Name="FileUrl" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ChuongTrinhDaoTao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NghanhHoc" Type="nvarchar" MaxLength="150" />
+    <Property Name="TenVietTat" Type="nvarchar" MaxLength="50" />
+    <Property Name="ThuocNhomNghanh" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ChuyenMucVanBan">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenChuyenMuc" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ChuyenNganhDaoTao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaChuyenNganh" Type="nvarchar" MaxLength="20" />
+    <Property Name="TenChuyenNganh" Type="nvarchar" MaxLength="150" />
+    <Property Name="KhoaId" Type="int" />
+    <Property Name="NganhId" Type="int" />
+    <Property Name="TenKhoa" Type="nvarchar" MaxLength="150" />
+    <Property Name="TenNganh" Type="nvarchar" MaxLength="150" />
+    <Property Name="MaSoCN_ThS" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CityCode" Type="varchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CongTrinhKhoaHoc">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NamCB" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenCTKH" Type="nvarchar" MaxLength="150" />
+    <Property Name="TenTapChi" Type="nvarchar" MaxLength="150" />
+    <Property Name="NoiXB" Type="nvarchar" MaxLength="150" />
+    <Property Name="File" Type="nvarchar" MaxLength="550" />
+    <Property Name="VaiTro" Type="nvarchar" MaxLength="50" />
+    <Property Name="HinhThuc" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Type" Type="int" />
+  </EntityType>
+  <EntityType Name="DangKyTuyenSinh">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="GioiTinh" Type="nvarchar" MaxLength="20" />
+    <Property Name="NgaySinh" Type="datetime" />
+    <Property Name="SoDienThoai" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="NoiSinh" Type="nvarchar" MaxLength="150" />
+    <Property Name="DiaChiLienLac" Type="nvarchar" MaxLength="250" />
+    <Property Name="NgheNghiep" Type="nvarchar" MaxLength="50" />
+    <Property Name="CoQuanCongTacHienNay" Type="nvarchar" MaxLength="250" />
+    <Property Name="NamBatDauCongTac" Type="nvarchar" MaxLength="20" />
+    <Property Name="HienLaCanBo" Type="nvarchar" MaxLength="50" />
+    <Property Name="ViTriConViecHienTai" Type="nvarchar" MaxLength="50" />
+    <Property Name="ThamNiemNghieNghiep" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChuyenMon" Type="nvarchar" MaxLength="50" />
+    <Property Name="Truong_TN_DaiHoc" Type="nvarchar" MaxLength="150" />
+    <Property Name="Nam_TN_DaiHoc" Type="int" />
+    <Property Name="HeDaoTao_DaiHoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nghanh_TN_DaiHoc" Type="nvarchar" MaxLength="150" />
+    <Property Name="DiemTrungBinh_DaiHoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoaiTotNghiep_DaiHoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="Url_FileUpload_DaiHoc" Type="nvarchar" MaxLength="550" />
+    <Property Name="Truong_TN_ThacSi" Type="nvarchar" MaxLength="150" />
+    <Property Name="Nam_TN_ThacSi" Type="nvarchar" MaxLength="50" />
+    <Property Name="HeDaoTao_ThacSi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nghanh_TN_ThacSi" Type="nvarchar" MaxLength="150" />
+    <Property Name="DiemTrungBinh_ThacSi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Url_FileUpload_ThacSi" Type="nvarchar" MaxLength="550" />
+    <Property Name="NgoaiNgu" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoaiVanBangNgoaiNgu" Type="nvarchar" MaxLength="50" />
+    <Property Name="Url_ChungChiNgoaiNgu" Type="nvarchar" MaxLength="550" />
+    <Property Name="BoTucKienThuc" Type="nvarchar" MaxLength="550" />
+    <Property Name="ChuyenNghanhDuTuyenId" Type="int" Nullable="false" />
+    <Property Name="TenChuyenNghanhDuTuyen" Type="nvarchar" MaxLength="100" />
+    <Property Name="DoiTuongDuTuyen" Type="nvarchar" MaxLength="50" />
+    <Property Name="ThoiGianHinhThucDaoTao" Type="nvarchar" MaxLength="150" />
+    <Property Name="Status" Type="int" />
+    <Property Name="TenDeTai" Type="nvarchar" MaxLength="500" />
+    <Property Name="KhoaId_NHD1" Type="int" />
+    <Property Name="Id_NHD1" Type="int" />
+    <Property Name="NHD1" Type="nvarchar" MaxLength="500" />
+    <Property Name="KhoaId_NHD2" Type="int" />
+    <Property Name="Id_NHD2" Type="int" />
+    <Property Name="NHD2" Type="nvarchar" MaxLength="500" />
+    <Property Name="CoQuanCongTac_NHD2" Type="nvarchar" MaxLength="500" />
+    <Property Name="NoiDungPhanHoi" Type="nvarchar(max)" />
+    <Property Name="TepFilePhanHoi" Type="nvarchar" MaxLength="500" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="Truong_TN_VB2" Type="nvarchar" MaxLength="500" />
+    <Property Name="Nam_TN_VB2" Type="int" />
+    <Property Name="HeDaoTao_VB2" Type="nvarchar" MaxLength="500" />
+    <Property Name="Nganh_TN_VB2" Type="nvarchar" MaxLength="500" />
+    <Property Name="LoaiTotNghiep_VB2" Type="nvarchar" MaxLength="150" />
+    <Property Name="Url_FileUpload_VB2" Type="nvarchar" MaxLength="150" />
+    <Property Name="DiemTrungBinh_VB2" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CapQuyenTruyCap" Type="bit" />
+    <Property Name="SoCMND" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ngaycap_CMND" Type="datetime" />
+    <Property Name="Noicap_CMND" Type="nvarchar" MaxLength="500" />
+    <Property Name="TinhThanh_CMND" Type="nvarchar" MaxLength="500" />
+    <Property Name="Quan_CMND" Type="nvarchar" MaxLength="500" />
+    <Property Name="Xa_CMND" Type="nvarchar" MaxLength="500" />
+    <Property Name="Url_FileUpload_AnhSoYeuLyLich" Type="nvarchar" MaxLength="500" />
+    <Property Name="Url_FileUpload_CongVanGioiThieu" Type="nvarchar" MaxLength="500" />
+    <Property Name="Url_FileUpload_GiaySucKhoe" Type="nvarchar" MaxLength="500" />
+    <Property Name="Url_FileUpload_HopDongLaoDong" Type="nvarchar" MaxLength="500" />
+    <Property Name="Url_FileUpload_ThuGioiThieu" Type="nvarchar" MaxLength="500" />
+    <Property Name="Url_FileUpload_BaiBaoKhoaHoc" Type="nvarchar" MaxLength="500" />
+    <Property Name="Url_FileUpload_DeCuongNghienCuu" Type="nvarchar" MaxLength="500" />
+    <Property Name="Url_FileUpload_Zip" Type="nvarchar" MaxLength="500" />
+    <Property Name="TenNganh" Type="nvarchar" MaxLength="500" />
+    <Property Name="TenKhoa" Type="nvarchar" MaxLength="500" />
+    <Property Name="NganhId" Type="int" />
+    <Property Name="KhoaId" Type="int" />
+    <Property Name="IdDotTS" Type="int" />
+    <Property Name="DanToc" Type="nvarchar" MaxLength="100" />
+    <Property Name="TrangThaiTuyenSinh" Type="int" />
+    <Property Name="DiemDeCuong" Type="float" />
+    <Property Name="DiemTong" Type="float" />
+  </EntityType>
+  <EntityType Name="DanhMucThongTin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="TenDanhMuc" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DanhMucTinTuc">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenDanhMuc" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DanhSachCanBoAddForm">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCanBo" Type="int" />
+    <Property Name="TenCanBo" Type="nvarchar" MaxLength="500" />
+    <Property Name="ChucVu" Type="nvarchar" MaxLength="500" />
+    <Property Name="VaiTro" Type="nvarchar" MaxLength="500" />
+    <Property Name="IdBieuMau" Type="int" />
+    <Property Name="HocHamHocVi" Type="nvarchar" MaxLength="500" />
+    <Property Name="CoQuanCongTac" Type="nvarchar" MaxLength="500" />
+    <Property Name="IdKhoa" Type="int" />
+    <Property Name="TenKhoa" Type="nvarchar" MaxLength="500" />
+    <Property Name="IdKhoahoc" Type="int" />
+    <Property Name="IdDotTS" Type="int" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="IdKhoaSelected" Type="int" />
+    <Property Name="IdChuyenNganh" Type="int" />
+    <Property Name="TenChuyenNganh" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="DanhSachChuyenDe">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenChuyenDe" Type="nvarchar(max)" />
+    <Property Name="SoTinChi" Type="int" />
+    <Property Name="NgayBaoVe" Type="datetime" />
+    <Property Name="DiemSo" Type="float" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DanhSachHoiDong">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="CoQuanCongTac" Type="nvarchar(max)" />
+    <Property Name="VaiTroThamGia" Type="nvarchar" MaxLength="150" />
+    <Property Name="Type" Type="int" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="Tab" Type="int" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DanToc">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ma" Type="nvarchar" MaxLength="10" />
+    <Property Name="TenDanToc" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenKhac" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Diem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HocVienId" Type="bigint" />
+    <Property Name="MaHocVien" Type="nvarchar" MaxLength="20" />
+    <Property Name="TenHocVien" Type="nvarchar" MaxLength="50" />
+    <Property Name="HocPhanId" Type="bigint" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiemHP1" Type="float" />
+    <Property Name="DiemHP2" Type="float" />
+    <Property Name="DiemHP3" Type="float" />
+    <Property Name="DiemHP4" Type="float" />
+    <Property Name="SoDiem" Type="float" />
+  </EntityType>
+  <EntityType Name="District">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DistrictCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="Location" Type="nvarchar" MaxLength="50" />
+    <Property Name="CityCode" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DotTuyenSinh">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idKhoahoc" Type="bigint" />
+    <Property Name="MaKhoaHoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenDot" Type="nvarchar" MaxLength="150" />
+    <Property Name="NgayBatDau" Type="datetime" />
+    <Property Name="NgayKetThuc" Type="datetime" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="GiangVien">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgaySinh" Type="datetime" />
+    <Property Name="GioiTinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="NoiSinh" Type="nvarchar" MaxLength="250" />
+    <Property Name="HoKhau" Type="nvarchar" MaxLength="250" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="350" />
+    <Property Name="SoDienThoai" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChucDanhId" Type="int" />
+    <Property Name="KhoaId" Type="int" />
+    <Property Name="RoleId" Type="int" />
+    <Property Name="Code" Type="nvarchar" MaxLength="20" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="HocHamHocViId" Type="int" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GiayToBaoVeLuanAn">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenGiayTo" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="HocPhan">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenHocPhan" Type="nvarchar" MaxLength="150" />
+    <Property Name="SoDVHT" Type="int" />
+    <Property Name="DieuKien" Type="bit" />
+    <Property Name="TuChon" Type="bit" />
+    <Property Name="SoTietLyThuyet" Type="int" />
+    <Property Name="SoTietThucHanh" Type="int" />
+    <Property Name="MaHocPhan" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="KhoaHocId" Type="int" />
+    <Property Name="KhoaId" Type="int" />
+    <Property Name="NganhId" Type="int" />
+    <Property Name="ChuyenNganhId" Type="int" />
+    <Property Name="SoTinChi" Type="int" />
+    <Property Name="LoaiHP" Type="int" />
+  </EntityType>
+  <EntityType Name="HocPhan_GiangVien">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YearId" Type="int" />
+    <Property Name="GradeId" Type="int" />
+    <Property Name="ConversionId" Type="int" />
+    <Property Name="Departmentid" Type="int" />
+    <Property Name="ForDepartmentId" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="LessionTime" Type="float" />
+    <Property Name="TeachingTime" Type="nvarchar" MaxLength="500" />
+    <Property Name="Class" Type="nvarchar(max)" />
+    <Property Name="Size" Type="int" />
+    <Property Name="Paid" Type="bit" />
+    <Property Name="Course" Type="nvarchar" MaxLength="50" />
+    <Property Name="Desc" Type="nvarchar(max)" />
+    <Property Name="Invited" Type="bit" />
+    <Property Name="Specializing" Type="nvarchar" MaxLength="250" />
+    <Property Name="InvitedPartner" Type="nvarchar" MaxLength="500" />
+    <Property Name="LinkedPartner" Type="nvarchar" MaxLength="500" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="500" />
+    <Property Name="InvitedDegreeId" Type="int" />
+    <Property Name="StaffId" Type="int" />
+    <Property Name="SemesterId" Type="int" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="IdHocPhan" Type="bigint" />
+    <Property Name="IdGiangVien" Type="bigint" />
+    <Property Name="LoaiGiangVien" Type="int" />
+    <Property Name="KhoaId" Type="int" />
+  </EntityType>
+  <EntityType Name="HocPhan_NCS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenHocPhan" Type="nvarchar(max)" />
+    <Property Name="TinChi" Type="int" />
+    <Property Name="Diem" Type="float" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaHocPhan" Type="nvarchar" MaxLength="50" />
+    <Property Name="TuChon" Type="bit" />
+    <Property Name="MaMonHoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenMonHoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiemDieuKien" Type="float" />
+    <Property Name="DiemThi" Type="float" />
+  </EntityType>
+  <EntityType Name="HocPhi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="File" Type="nvarchar" MaxLength="550" />
+    <Property Name="Khoa" Type="int" />
+    <Property Name="TenKhoa" Type="nvarchar" MaxLength="150" />
+    <Property Name="ChuyennNghanh" Type="int" Nullable="false" />
+    <Property Name="TenChuyenNganh" Type="nvarchar" MaxLength="150" />
+    <Property Name="KhoaHoc" Type="int" />
+    <Property Name="TenKhoaHoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="NoiDung" Type="nvarchar(max)" />
+    <Property Name="TrangThai" Type="int" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="MucNop" Type="float" />
+    <Property Name="Type" Type="int" />
+  </EntityType>
+  <EntityType Name="HocPhiNCS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaHV" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="500" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="500" />
+    <Property Name="TongTien" Type="float" />
+    <Property Name="DaTra" Type="float" />
+    <Property Name="HoanThanh" Type="bit" />
+    <Property Name="QuaHan" Type="bit" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="HoiDongPhanBienDocLap">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="DienThoai" Type="nvarchar" MaxLength="50" />
+    <Property Name="TrachNhiem" Type="nvarchar" MaxLength="150" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ThuTuHienThi" Type="int" />
+  </EntityType>
+  <EntityType Name="HoSoThamDinh">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="DotTĐ" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoaiThamDinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoCV" Type="int" />
+    <Property Name="NgayKy" Type="datetime" />
+    <Property Name="KetQua" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type" Type="int" />
+  </EntityType>
+  <EntityType Name="KetQuaBaoVe">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenLanBaoVe" Type="nvarchar" MaxLength="50" />
+    <Property Name="GioBaoVe" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayBaoVe" Type="datetime" />
+    <Property Name="DiaDiem" Type="nvarchar" MaxLength="50" />
+    <Property Name="KetQuaBaoVe" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type" Type="int" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="Tab" Type="int" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Khoa">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenKhoa" Type="nvarchar" MaxLength="150" />
+    <Property Name="TenVietTat" Type="nvarchar" MaxLength="20" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="250" />
+    <Property Name="DienThoai" Type="nvarchar" MaxLength="30" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KhoaHoc">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaKhoa" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayKhaiGiang" Type="datetime" />
+    <Property Name="SoLuongHocVien" Type="int" />
+    <Property Name="TrangThai" Type="int" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KhoaHoc_HocVien">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KhoaHocId" Type="bigint" />
+    <Property Name="HocVienId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="LichBaoVe">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenDeTai" Type="nvarchar(max)" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="KhoaHoc" Type="nvarchar(max)" />
+    <Property Name="ChuyenNganhId" Type="int" />
+    <Property Name="TenChuyenNganh" Type="nvarchar" MaxLength="350" />
+    <Property Name="CapBaoVe" Type="nvarchar" MaxLength="350" />
+    <Property Name="GioBaoVe" Type="nvarchar" MaxLength="350" />
+    <Property Name="NgayBaoVe" Type="date" />
+    <Property Name="DiaDiem" Type="nvarchar(max)" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LuanAnTienSi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="File" Type="nvarchar" MaxLength="550" />
+    <Property Name="Khoa" Type="int" />
+    <Property Name="KhoaHoc" Type="int" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgaySinh" Type="datetime" />
+    <Property Name="Lop" Type="int" />
+    <Property Name="ChuyenNghanh" Type="int" />
+    <Property Name="NoiDung" Type="nvarchar(max)" />
+    <Property Name="TrangThai" Type="bit" />
+    <Property Name="QDBVTruong" Type="nvarchar" MaxLength="150" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MonHoc">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaMon" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenMon" Type="nvarchar" MaxLength="50" />
+    <Property Name="HocPhanId" Type="int" />
+    <Property Name="KhoaHocId" Type="int" />
+    <Property Name="KhoaId" Type="int" />
+    <Property Name="NganhId" Type="int" />
+    <Property Name="ChuyenNganhId" Type="int" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MucHocPhi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaKhoa" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenKhoa" Type="nvarchar" MaxLength="50" />
+    <Property Name="NamHoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="HocPhi" Type="float" />
+    <Property Name="MaNganh" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenNganh" Type="nvarchar(max)" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NCS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ma" Type="nvarchar" MaxLength="50" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="500" />
+    <Property Name="NgaySinh" Type="date" />
+    <Property Name="NoiSinh" Type="nvarchar" MaxLength="250" />
+    <Property Name="HoKhau" Type="nvarchar" MaxLength="250" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="500" />
+    <Property Name="DienThoai" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="GioiTinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="DanToc" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChucDanhId" Type="int" />
+    <Property Name="KhoaId" Type="int" />
+    <Property Name="QuocTich" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type" Type="int" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="KHoaHocId" Type="int" />
+    <Property Name="NganhId" Type="int" />
+    <Property Name="NganhDaoTaoId" Type="int" />
+  </EntityType>
+  <EntityType Name="NganhDaoTao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaNganh" Type="nvarchar" MaxLength="20" />
+    <Property Name="TenNganh" Type="nvarchar" MaxLength="150" />
+    <Property Name="KhoaId" Type="int" />
+    <Property Name="TenKhoa" Type="nvarchar" MaxLength="150" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NguoiHuongDan">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="CoQuanCongtac" Type="nvarchar" MaxLength="50" />
+    <Property Name="VaiTroThamGia" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoaiQuyetDinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoQDDieuChinhNHD" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayKy" Type="datetime" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PhanBienDocLap">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="TrachNhiem" Type="nvarchar" MaxLength="50" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="20" />
+    <Property Name="File" Type="nvarchar" MaxLength="550" />
+    <Property Name="LanGui" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayGui" Type="datetime" />
+    <Property Name="NgaNhan" Type="datetime" />
+    <Property Name="KetQua" Type="nvarchar" MaxLength="150" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="PhongThi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaPhongThi" Type="nvarchar" MaxLength="30" />
+    <Property Name="MaNghanh" Type="int" />
+    <Property Name="ChuyenNghanh" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgoaiNgu" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoaiThiSinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="QuyetDinh">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SoQuyetDinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayKy" Type="datetime" />
+    <Property Name="Type" Type="int" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="Tab" Type="int" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="isLock" Type="bit" />
+  </EntityType>
+  <EntityType Name="SauBaoVe">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="File" Type="nvarchar" MaxLength="550" />
+    <Property Name="NoiDung" Type="nvarchar(max)" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+    <Property Name="UrlBienLai" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SysComment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailNCS" Type="nvarchar" MaxLength="250" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Category" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SysLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Action" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="LoggedAt" Type="datetime" />
+    <Property Name="Controller" Type="nvarchar" MaxLength="150" />
+    <Property Name="IPAddress" Type="nvarchar" MaxLength="150" />
+    <Property Name="AreaAccessed" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SysNotification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="150" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="AttachFile" Type="nvarchar(max)" />
+    <Property Name="Priority" Type="int" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="150" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="SysSetting">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SKey" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Value" Type="nvarchar(max)" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <EntityType Name="ThamSoBieuMau">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenThamSo" Type="nvarchar" MaxLength="50" />
+    <Property Name="GiaTriThamSo" Type="nvarchar(max)" />
+    <Property Name="KieuDuLieu" Type="nvarchar" MaxLength="50" />
+    <Property Name="CauTrucHienThi" Type="nvarchar" MaxLength="300" />
+    <Property Name="ThuTuHienThi" Type="int" />
+    <Property Name="BieuMau" Type="nvarchar(max)" />
+    <Property Name="BieuMauId" Type="int" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ThongBao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="550" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="150" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="TrangThai" Type="int" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ThongTinDeTai">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenDeTai" Type="nvarchar" MaxLength="500" />
+    <Property Name="SoQuyetDinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayKy" Type="datetime" />
+    <Property Name="FileKiemChung" Type="nvarchar" MaxLength="150" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="NHD1" Type="nvarchar" MaxLength="500" />
+    <Property Name="NHD2" Type="nvarchar" MaxLength="500" />
+    <Property Name="NhomBaoCao" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayHop" Type="datetime" />
+    <Property Name="GioHop" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaDiem" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="ThuVien">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KhoaId" Type="int" />
+    <Property Name="KhoaHocId" Type="int" />
+    <Property Name="NganhId" Type="int" />
+    <Property Name="ChuyenNganhId" Type="int" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="350" />
+    <Property Name="NgaySinh" Type="date" />
+    <Property Name="NopLan1" Type="bit" />
+    <Property Name="UrlFileLan1" Type="nvarchar" MaxLength="400" />
+    <Property Name="NopLan2" Type="bit" />
+    <Property Name="UrlFileLan2" Type="nvarchar" MaxLength="400" />
+    <Property Name="QDBV_CapTruong" Type="date" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TieuBanChamChuyenDe">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="CoQuanCongTac" Type="nvarchar" MaxLength="150" />
+    <Property Name="VaiTroThamGia" Type="nvarchar" MaxLength="150" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type" Type="int" />
+  </EntityType>
+  <EntityType Name="TinTuc">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TieuDe" Type="nvarchar" MaxLength="300" />
+    <Property Name="MoTaNgan" Type="nvarchar" MaxLength="550" />
+    <Property Name="NoiDung" Type="nvarchar(max)" />
+    <Property Name="AnhDaiDien" Type="nvarchar" MaxLength="550" />
+    <Property Name="DanhMuc" Type="int" />
+    <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CountView" Type="int" />
+  </EntityType>
+  <EntityType Name="TruongThongTin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdDanhMuc" Type="int" />
+    <Property Name="TenTruongThongTin" Type="nvarchar(max)" />
+    <Property Name="LoaiTruongThongTin" Type="nchar" MaxLength="300" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TruongThongTin_NCS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TruongThongTinId" Type="int" />
+    <Property Name="MaNCS" Type="nvarchar" MaxLength="50" />
+    <Property Name="Url" Type="nvarchar(max)" />
+    <Property Name="Status" Type="int" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="150" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="PassWord" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="150" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="150" />
+    <Property Name="IsLock" Type="bit" />
+  </EntityType>
+  <EntityType Name="UserRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="250" />
+    <Property Name="Email" Type="nvarchar" MaxLength="250" />
+    <Property Name="Role" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsLock" Type="bit" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="VanBan">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TieuDe" Type="nvarchar" MaxLength="150" />
+    <Property Name="URL" Type="nvarchar" MaxLength="250" />
+    <Property Name="ChuyenMuc" Type="int" />
+    <Property Name="DauMuc" Type="nvarchar" MaxLength="50" />
+    <Property Name="Anh" Type="nvarchar" MaxLength="350" />
+    <Property Name="HinhThuc" Type="int" />
+    <Property Name="TrangThai" Type="bit" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Ward">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WardCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="Location" Type="nvarchar" MaxLength="50" />
+    <Property Name="DistrictCode" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="TEMIS_systemModelStoreContainer">
+    <EntitySet Name="BaoVe_NCS" EntityType="Self.BaoVe_NCS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BaoVeCapBoMon" EntityType="Self.BaoVeCapBoMon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BaoVeCapTruong" EntityType="Self.BaoVeCapTruong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BaoVeTongQuan" EntityType="Self.BaoVeTongQuan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BieuMau" EntityType="Self.BieuMau" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChuongTrinhDaoTao" EntityType="Self.ChuongTrinhDaoTao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChuyenMucVanBan" EntityType="Self.ChuyenMucVanBan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChuyenNganhDaoTao" EntityType="Self.ChuyenNganhDaoTao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CongTrinhKhoaHoc" EntityType="Self.CongTrinhKhoaHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DangKyTuyenSinh" EntityType="Self.DangKyTuyenSinh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DanhMucThongTin" EntityType="Self.DanhMucThongTin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DanhMucTinTuc" EntityType="Self.DanhMucTinTuc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DanhSachCanBoAddForm" EntityType="Self.DanhSachCanBoAddForm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DanhSachChuyenDe" EntityType="Self.DanhSachChuyenDe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DanhSachHoiDong" EntityType="Self.DanhSachHoiDong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DanToc" EntityType="Self.DanToc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Diem" EntityType="Self.Diem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="District" EntityType="Self.District" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DotTuyenSinh" EntityType="Self.DotTuyenSinh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GiangVien" EntityType="Self.GiangVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GiayToBaoVeLuanAn" EntityType="Self.GiayToBaoVeLuanAn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HocPhan" EntityType="Self.HocPhan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HocPhan_GiangVien" EntityType="Self.HocPhan_GiangVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HocPhan_NCS" EntityType="Self.HocPhan_NCS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HocPhi" EntityType="Self.HocPhi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HocPhiNCS" EntityType="Self.HocPhiNCS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HoiDongPhanBienDocLap" EntityType="Self.HoiDongPhanBienDocLap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HoSoThamDinh" EntityType="Self.HoSoThamDinh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KetQuaBaoVe" EntityType="Self.KetQuaBaoVe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Khoa" EntityType="Self.Khoa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KhoaHoc" EntityType="Self.KhoaHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KhoaHoc_HocVien" EntityType="Self.KhoaHoc_HocVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LichBaoVe" EntityType="Self.LichBaoVe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LuanAnTienSi" EntityType="Self.LuanAnTienSi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MonHoc" EntityType="Self.MonHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MucHocPhi" EntityType="Self.MucHocPhi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NCS" EntityType="Self.NCS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NganhDaoTao" EntityType="Self.NganhDaoTao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NguoiHuongDan" EntityType="Self.NguoiHuongDan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhanBienDocLap" EntityType="Self.PhanBienDocLap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhongThi" EntityType="Self.PhongThi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuyetDinh" EntityType="Self.QuyetDinh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SauBaoVe" EntityType="Self.SauBaoVe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SysComment" EntityType="Self.SysComment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SysLog" EntityType="Self.SysLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SysNotification" EntityType="Self.SysNotification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SysSetting" EntityType="Self.SysSetting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ThamSoBieuMau" EntityType="Self.ThamSoBieuMau" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ThongBao" EntityType="Self.ThongBao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ThongTinDeTai" EntityType="Self.ThongTinDeTai" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ThuVien" EntityType="Self.ThuVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TieuBanChamChuyenDe" EntityType="Self.TieuBanChamChuyenDe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TinTuc" EntityType="Self.TinTuc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TruongThongTin" EntityType="Self.TruongThongTin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TruongThongTin_NCS" EntityType="Self.TruongThongTin_NCS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VanBan" EntityType="Self.VanBan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ward" EntityType="Self.Ward" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
