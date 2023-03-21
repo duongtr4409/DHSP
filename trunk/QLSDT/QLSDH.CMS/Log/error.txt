@@ -1,0 +1,1143 @@
+-----------Exception Details on  10/27/2020 4:38:59 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 27-10-2020 04:38:59
+
+Controller :TaiKhoan
+
+Action :ListTeacher
+
+Auth :D2290320111111
+
+Error Line No : ine 190
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: http://localhost:50498/Admin/TaiKhoan/ListTeacher?departmentId=0
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  10/27/2020 4:39:34 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 27-10-2020 04:39:34
+
+Controller :TaiKhoan
+
+Action :ListTeacher
+
+Auth :D2290320111111
+
+Error Line No : ine 190
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: http://localhost:50498/Admin/TaiKhoan/ListTeacher?departmentId=0
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  10/30/2020 2:19:58 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 30-10-2020 02:19:58
+
+Controller :TaiKhoan
+
+Action :ListTeacher
+
+Auth :D2290320111111
+
+Error Line No : ine 257
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: http://localhost:50498/Admin/TaiKhoan/ListTeacher?departmentId=10
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  10/30/2020 5:24:46 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 30-10-2020 05:24:46
+
+Controller :ThiSinhTuyenSinh
+
+Action :ReplaceWordDocument
+
+Auth :D2290320111111
+
+Error Line No : ine 645
+
+Error Message: COMException
+
+Exception Type: System.Runtime.InteropServices.COMException
+
+Error Location : Command failed
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/ReplaceWordDocument?id=14
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+Pass role
+Pass ncs
+role =K41NCS002Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =K41NCS002Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =K41NCS002Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =K41NCS002Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+-----------Exception Details on  01/24/2021 11:20:35 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-01-2021 11:20:35
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2495
+
+Error Message: NotSupportedException
+
+Exception Type: System.NotSupportedException
+
+Error Location : LINQ to Entities does not recognize the method 'Int32 ToInt32(System.String)' method, and this method cannot be translated into a store expression.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=1%3B2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/24/2021 11:30:14 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-01-2021 11:30:14
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2495
+
+Error Message: NotSupportedException
+
+Exception Type: System.NotSupportedException
+
+Error Location : LINQ to Entities does not recognize the method 'Int32 ToInt32(System.String)' method, and this method cannot be translated into a store expression.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=1%3B1
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/24/2021 11:30:42 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-01-2021 11:30:42
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2495
+
+Error Message: NotSupportedException
+
+Exception Type: System.NotSupportedException
+
+Error Location : LINQ to Entities does not recognize the method 'Int32 ToInt32(System.String)' method, and this method cannot be translated into a store expression.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=1%3B1
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/24/2021 11:40:34 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-01-2021 11:40:34
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2584
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_24_1_23_40_33.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=1
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/24/2021 11:41:24 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-01-2021 11:41:24
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2584
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_24_1_23_41_23.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/24/2021 11:43:41 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-01-2021 11:43:41
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2584
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_24_1_23_43_40.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/24/2021 11:45:29 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-01-2021 11:45:29
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2584
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_24_1_23_45_28.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/24/2021 11:45:58 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-01-2021 11:45:58
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2584
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_24_1_23_45_57.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/24/2021 11:51:15 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-01-2021 11:51:15
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2584
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_24_1_23_51_14.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/24/2021 11:52:31 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-01-2021 11:52:31
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2584
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_24_1_23_52_30.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/24/2021 11:52:38 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-01-2021 11:52:38
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2584
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_24_1_23_52_36.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/24/2021 11:53:09 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 24-01-2021 11:53:09
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2584
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_24_1_23_53_8.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/25/2021 9:43:47 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 25-01-2021 09:43:47
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2596
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_25_1_9_43_46.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=1%3B2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/25/2021 9:49:10 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 25-01-2021 09:49:10
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2596
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_25_1_9_49_9.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=1%3B2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/25/2021 9:49:45 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 25-01-2021 09:49:45
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2596
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_25_1_9_49_44.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=1%3B2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/25/2021 9:53:38 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 25-01-2021 09:53:38
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2596
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_25_1_9_53_36.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=1%3B2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/25/2021 9:54:07 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 25-01-2021 09:54:07
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2596
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_25_1_9_54_6.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=1%3B2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  01/25/2021 9:54:41 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 25-01-2021 09:54:41
+
+Controller :
+
+Action :BieuMauQuyetDinhTrungTuyen
+
+Auth :D2290320111111
+
+Error Line No : ne 2596
+
+Error Message: IOException
+
+Exception Type: System.IO.IOException
+
+Error Location : The file 'D:\qlncs.hune.edu.vn\Soure Code\QLSDT\QLSDH.CMS\Upload\FileBMDowload\Cá Nhân Trúng Tuyển_25_1_9_54_39.zip' already exists.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/BieuMauQuyetDinhTrungTuyen?idDotTuyenSinh=1%3B2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+Pass role
+Pass ncs
+role =K41NCS013Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =K41NCS013Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =K41NCS013Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass role
+Pass role
+Pass role
+Pass role
+Pass role
+Pass role
+Pass role
+Pass role
+Pass role
+Pass role
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =ncsNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =ncsNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =ncsNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =adminNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvanaNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+lỗi gửi email: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+lỗi gửi email: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+lỗi gửi email: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+lỗi gửi email: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+lỗi gửi email: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+lỗi gửi email: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+Pass role
+Pass ncs
+role =Nghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+Pass role
+Pass ncs
+role =nguyenvana@gmail.comNghiên cứu sinh
+get role =TEMIS.Model.UserRoles
+-----------Exception Details on  03/17/2023 3:55:46 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 17-03-2023 03:55:46
+
+Controller :
+
+Action :ReplaceWordDocument
+
+Auth :admin
+
+Error Line No : ne 1536
+
+Error Message: FileNotFoundException
+
+Exception Type: System.IO.FileNotFoundException
+
+Error Location : Could not find file 'E:\DHSP\trunk\QLSDT\QLSDH.CMS\theme_admin\FileBieuMau\TEST'.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/ReplaceWordDocument?id=1
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  03/17/2023 3:55:57 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 17-03-2023 03:55:57
+
+Controller :
+
+Action :ReplaceWordDocument
+
+Auth :admin
+
+Error Line No : ne 1536
+
+Error Message: FileNotFoundException
+
+Exception Type: System.IO.FileNotFoundException
+
+Error Location : Could not find file 'E:\DHSP\trunk\QLSDT\QLSDH.CMS\theme_admin\FileBieuMau\TEST'.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/ReplaceWordDocument?id=1
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  03/17/2023 4:09:10 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 17-03-2023 04:09:10
+
+Controller :
+
+Action :ReplaceWordDocument
+
+Auth :admin
+
+Error Line No : ne 1540
+
+Error Message: FileFormatException
+
+Exception Type: System.IO.FileFormatException
+
+Error Location : File contains corrupted data.
+
+ Error Page Url: http://localhost:50498/Admin/ThiSinhTuyenSinh/ReplaceWordDocument?id=1004
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
